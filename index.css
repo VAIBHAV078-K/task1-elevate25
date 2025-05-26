@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman";
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin: 0 1rem;
+  align-items: end;
+  justify-content: space-between;
+  cursor: pointer;
+  color: hsl(115, 97%, 53%);
+  font-weight: 600;
+}
+#main {
+  width: 100%;
+  height: 130%;
+}
+#top {
+  width: 100%;
+  height: 50%;
+  background: url(https://plus.unsplash.com/premium_photo-1746167794471-508540dd0875?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 50%, 60%;
+}
+#bottom {
+  width: 100%;
+  height: 50%;
+  background-color: blue;
+  display: flex;
+}
+#btwotop {
+  height: 60%;
+  width: 100%;
+  background-color: blue;
+  background-image: url(https://plus.unsplash.com/premium_photo-1661853843503-e1982de369f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JlZW5lZ2lybHMlMjBiZWF1dHklMjBpbiUyMGZvcmVzdHR8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: center;
+}
+#btwobottom {
+  height: 40%;
+  width: 100%;
+  background-color: chartreuse;
+  background-image: url(https://media.istockphoto.com/id/1952747961/photo/smiling-woman-embracing-dog-on-sofa.webp?a=1&b=1&s=612x612&w=0&k=20&c=XCWQ2r1_4CpPLy1vmRnmAX8BMksH8PU3Urxg8d5bYJw=);
+  background-size: cover;
+  background-position: center;
+}
+#bone {
+  width: 25%;
+  height: 100%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1668110864450-48a6591c3a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9yZXN0JTIwYmVhdXR5fGVufDB8fDB8fHww);
+  background-size: cover;
+  background-position: center;
+}
+#btwo {
+  width: 25%;
+  height: 100%;
+  /* background-image: url(https://plus.unsplash.com/premium_photo-1661853843503-e1982de369f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JlZW5lZ2lybHMlMjBiZWF1dHklMjBpbiUyMGZvcmVzdHR8ZW58MHx8MHx8fDA%3D); */
+  background-size: cover;
+  background-position: center;
+}
+#bthree {
+  width: 25%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1674870931801-bf3767f507a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlJTIwZGVzaWduJTIwd2l0aCUyMCUyMHlvdW5nJTIwZ2lybHN8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: 30% 50%;
+}
+#bfour {
+  width: 25%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1650982053383-8bc119efa064?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZW5lcnklMjB3aXRoJTIwYm95c3xlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+  background-position: center center;
+}
+#overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(127, 29, 38, 0.5); */
+}
+#text {
+  align-items: center;
+  bottom: 20%;
+  position: absolute;
+  width: 100%;
+  padding: 0 10vw;
+  /* height: 120px; */
+  /* background-color: rgb(0, 98, 255); */
+  display: flex;
+  justify-content: space-between;
+}
+#text h1 {
+  font-size: 2vw;
+  color: hsl(310, 96%, 50%);
+  font-weight: 300;
+}
+#textright {
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  display: flex;
+}
+#textright p {
+  font-size: 18px;
+  width: 40%;
+  color: aliceblue;
+}
+#textright i {
+  color: aliceblue;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+/* RESPONSIVE QUERIES */
+@media (max-width: 1024px) {
+  #bone,
+  #btwo,
+  #bthree,
+  #bfour {
+    width: 50%;
+  }
+
+  #textright {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #text h1 {
+    font-size: 6vw;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #bone,
+  #btwo,
+  #bthree,
+  #bfour {
+    width: 50%;
+    height: 50vh;
+  }
+
+  #textright {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #text h1 {
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #bone,
+  #btwo,
+  #bthree,
+  #bfour {
+    width: 100%;
+    height: 30vh;
+  }
+
+  #text {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 0 5vw;
+  }
+
+  #textright {
+    width: 100%;
+  }
+
+  #textright p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #text h1 {
+    font-size: 6vw;
+  }
+
+  #textright p {
+    font-size: 0.85rem;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin: 0.5rem 0;
+  }
+}
